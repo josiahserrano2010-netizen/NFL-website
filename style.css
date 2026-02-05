@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+}
+
+main {
+    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
+
+}
+.navbar li { 
+    justify-content: center;
+    
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.navbar a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   
+}
+
+.navbar a:hover {
+  background-color: black;
+}  
+nav ul {
+    display: flex;             
+    justify-content: center;   
+    list-style: none;          
+    padding: 0;
+    margin: 0;
+}
