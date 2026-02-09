@@ -41,3 +41,144 @@ nav ul {
     padding: 0;
     margin: 0;
 }
+.table-container {
+  overflow-x: auto;
+  margin: 20px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sb-winners-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.sb-winners-table thead {
+  background-color: #013369; /* NFL Blue */
+  color: white;
+}
+
+.sb-winners-table th, .sb-winners-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.sb-winners-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.sb-winners-table tbody tr:hover {
+  background-color: #e9ecef;
+  transition: background-color 0.2s ease;
+}
+
+@media (max-width: 600px) {
+  .sb-winners-table th, .sb-winners-table td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+.video-section {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Maintains 16:9 Aspect Ratio */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Modern Sports Button */
+.highlight-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #D50A0A; /* NFL Red */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.highlight-btn:hover {
+  background-color: #a30808;
+  transform: translateY(-2px);
+}
+/* Update the existing highlight-btn CSS rule */
+.highlight-btn {
+  display: inline-flex; /* Use Flexbox to align items horizontally */
+  align-items: center; /* Vertically centers icons and text */
+  justify-content: center; /* Horizontally centers all content in the button */
+  padding: 15px 30px;
+  background-color: #D50A0A;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  /* Optional: Adds space between button contents if needed by default */
+  gap: 10px;
+}
+
+.highlight-btn:hover {
+  background-color: #013369;
+  transform: scale(1.05);
+}
+
+/* New CSS for the images inside the button */
+.button-icon {
+  height: 25px; /* Adjust the size of the icons as needed */
+  width: auto;
+  /* Ensure images don't stretch the button vertically */
+  vertical-align: middle;
+}
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.gallery-item img {
+    width: 200px; 
+    height: 200px;
+    
+    /* 'cover' fills the square (best for player photos) */
+    /* 'contain' shows the whole photo with padding (best for logos) */
+    object-fit: cover; 
+    
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; /* Optional: rounds the corners slightly */
+    background-color: #f9f9f9; 
+    border: 2px solid #013369; /* Optional: adds an NFL Blue frame */
+}
