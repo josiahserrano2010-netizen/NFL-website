@@ -172,13 +172,19 @@ nav ul {
     width: 200px; 
     height: 200px;
     
-    /* 'cover' fills the square (best for player photos) */
-    /* 'contain' shows the whole photo with padding (best for logos) */
+   
     object-fit: cover; 
     
     display: block;
     margin: 0 auto;
-    border-radius: 8px; /* Optional: rounds the corners slightly */
+    border-radius: 8px; 
     background-color: #f9f9f9; 
-    border: 2px solid #013369; /* Optional: adds an NFL Blue frame */
+    border: 2px solid #013369; 
 }
+/* NFL red */ padding: 10px 0; } .navbar ul { list-style: none; display: flex; justify-content: center; gap: 30px; padding: 0; margin: 0; } .navbar a { color: white; text-decoration: none; font-size: 18px; font-weight: bold; } .navbar a:hover { text-decoration: underline; } /* MAIN CONTENT */ main { width: 90%; max-width: 800px; margin: 30px auto; } 
+/* FORM CARD */ .real-form { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 0 12px rgba(0,0,0,0.15); margin-top: 20px; } 
+/* FORM ELEMENTS */ .form-group { margin-bottom: 18px; } .form-group label { display: block; font-weight: bold; margin-bottom: 6px; } .real-form input[type="text"], .real-form input[type="email"], .real-form input[type="tel"], .real-form input[type="date"], .real-form select, .real-form textarea { width: 100%; padding: 10px; border: 1px solid #bbb; border-radius: 6px; font-size: 15px; background: #fafafa; } .checkbox-group label, .radio-group label { display: block; margin: 4px 0; } 
+/* SLIDER */ input[type="range"] { width: 100%; } 
+/* TOGGLE SWITCH */ .switch { position: relative; display: inline-block; width: 50px; height: 24px; } .switch input { display: none; } .slider { position: absolute; cursor: pointer; background: #ccc; border-radius: 24px; top: 0; left: 0; right: 0; bottom: 0; transition: .3s; } .slider:before { position: absolute; content: ""; height: 18px; width: 18px; left: 3px; bottom: 3px; background: white; border-radius: 50%; transition: .3s; } .switch input:checked + .slider { background: #002244; } .switch input:checked + .slider:before { transform: translateX(26px); } 
+/* BUTTONS */ .button-group { display: flex; justify-content: space-between; margin-top: 20px; } button { padding: 10px 20px; border: none; background: #002244; color: white; border-radius: 6px; cursor: pointer; font-size: 15px; font-weight: bold; } button:hover { background: #00152e; } .reset-btn { background: #777; } .reset-btn:hover { background: #555; }
+.logo-layout { display: flex; justify-content: center; align-items: flex-start; /* THIS keeps logos at the top */ gap: 40px; margin-top: 30px; } .logo-column { display: flex; flex-direction: column; gap: 20px; } .logo-column img { width: 120px; height: auto; object-fit: contain; }
